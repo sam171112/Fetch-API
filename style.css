@@ -1,0 +1,97 @@
+body
+{
+  background-image: url("151.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#MainDiv
+{
+   display: grid;
+   grid-template-columns:repeat(3,auto);
+   gap: 30px;
+  
+  }
+.subDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(146, 128, 134);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(138, 117, 124);
+    transition: all 2s ease-in;
+    color: rgb(145, 6, 126); 
+    
+}
+.MainH
+{
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,#d11cb9 0%, #44107a 29%, #ff1361 67%, #34e011 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textani 2s linear infinite;
+    font-size: 30px;
+  }
+
+@keyframes textani 
+{
+  to {
+       background-position: 200% center;
+     }
+}
+.price
+{
+ margin-right: 300px;
+ margin-top: 0px;
+ padding: 0px;
+}
+.t
+{
+ margin-bottom: 5px;
+ padding: 0px;
+}
+.btn
+{
+  margin-left: 300px;  
+  margin-top: 30px;
+  color: #ff1361;
+   background-color: transparent;
+   border: 1px solid #ff1361;
+   border-radius: 10px;
+}
+
+
+@media screen and (min-width: 280px) and(max-width: 768px) 
+{
+  
+  #MainDiv
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 0px; 
+  }
+  .subDiv
+{
+  width: 200px;
+}
+
+  .price
+{
+ margin-right: 0px;
+}
+
+.btn
+{
+  margin-left: 0px;  
+  margin-top: 0px;
+  
+}
+}
+
+
+
